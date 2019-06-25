@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) =>
         }
         else
         {
-            callback(undefined, '\nWell, it looks like it\'s been mostly ' + body.daily.data[0].summary.toLowerCase() +
+            callback(undefined, '\nWell, it looks like ' + body.daily.data[0].summary.toLowerCase() +
                 ' And right now its a balmy ' + body.currently.temperature + ' degrees with a ' +
                 body.currently.precipProbability + '% chance of rain.')
         }

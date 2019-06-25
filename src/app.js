@@ -31,13 +31,14 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Jonathan Warfield'
+        name: 'Jonathan Warfield',
+        message: 'I don\'t like to share personal information on the internet'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Have you tried turning it off and turning it back on again?',
         title: 'Help',
         name: 'Jonathan Warfield'
     })

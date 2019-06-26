@@ -18,7 +18,7 @@ const forecast = (latitude, longitude, callback) =>
             callback(undefined, '\nWell, it looks like ' + body.daily.data[0].summary.toLowerCase() +
                 '.\nRight now its a balmy ' + body.currently.temperature + ' degrees with a ' +
                 body.currently.precipProbability + '% chance of rain.\nThere\'s ' + body.currently.humidity * 100 + '% humidity\n'
-                + 'The high for today is ' + body.daily.temperatureMax + ' degrees and the low is ' + body.daily.temperatureMin)
+                + 'The high for today is ' + body.daily.data[0].temperatureMax + ' degrees and the low is ' + body.daily.data[0].temperatureMin)
         }
     })
 }
